@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrape prtofilo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styless.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الزر لفتح القائمة -->
+  <button class="menu-toggle" id="menuToggleBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu">
+    ☰
+  </button>
+
+  <!-- القائمة الجانبية -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Start Bootstrap</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- الغلاف -->
+  <div class="bg-cover" id="home">
+    <h1>Stylish Portfolio</h1>
+    <p>A Free Bootstrap Theme by Start Bootstrap</p>
+    <a href="#" class="btn btn-info text-white">Find Out More</a>
+  </div>
+
+  <!-- القسم التعريفي -->
+  <div class="section" id="about">
+    <h1>Stylish Portfolio is the perfect theme for your next project!</h1>
+    <p>This theme features a flexible, UX-friendly sidebar menu and stock photos from our friends at 
+      <a href="https://unsplash.com" target="_blank">Unsplash</a>!
+    </p>
+    <button>What We Offer</button>
+  </div>
+
+  <!-- الخدمات -->
+  <div class="services-section" id="services">
+    <div class="services-title">SERVICES</div>
+    <h1>What We Offer</h1>
+    <div class="services-container">
+      <div class="item">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/2c6e8c/smartphone.png" alt="Responsive">
+        </div>
+        <div class="text">
+          <strong>Responsive</strong>
+          <p>Looks great on any screen size!</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/2c6e8c/edit.png" alt="Redesigned">
+        </div>
+        <div class="text">
+          <strong>Redesigned</strong>
+          <p>Freshly redesigned for Bootstrap 5.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/2c6e8c/like.png" alt="Favorited">
+        </div>
+        <div class="text">
+          <strong>Favorited</strong>
+          <p>Millions of users ♥ Start Bootstrap!</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/2c6e8c/mustache.png" alt="Question">
+        </div>
+        <div class="text">
+          <strong>Question</strong>
+          <p>I mustache you a question...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cont">
+    <h1>Welcome to your next website!</h1>
+    <button class="download-btn">Download now!</button>
+  </div>
+
+  <!-- قسم المشاريع -->
+  <section class="portfolio bg-white text-center" id="portfolio">
+    <div class="content-section-heading">
+      <h3 class="text-warning mb-0 fs-5">Portfolio</h3>
+      <h2 class="mb-5 fw-xl fw-bold">Recent Projects</h2>
+    </div>
+    <div class="row justify-content-center gx-0">
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#!">
+          <div class="caption">
+            <div class="caption-content">
+              <div class="h2">Stationary</div>
+              <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+            </div>
+          </div>
+          <img class="img-fluid" src="./photo/WhatsApp Image 2025-07-31 at 2.32.22 PM (1).jpeg" alt="..." />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#!">
+          <div class="caption">
+            <div class="caption-content">
+              <div class="h2">Ice Cream</div>
+              <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            </div>
+          </div>
+          <img class="img-fluid" src="./photo/WhatsApp Image 2025-07-31 at 2.32.21 PM.jpeg" alt="..." />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#!">
+          <div class="caption">
+            <div class="caption-content">
+              <div class="h2">Strawberries</div>
+              <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+            </div>
+          </div>
+          <img class="img-fluid" src="./photo/WhatsApp Image 2025-07-31 at 2.32.20 PM.jpeg" alt="..." />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#!">
+          <div class="caption">
+            <div class="caption-content">
+              <div class="h2">Workspace</div>
+              <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+            </div>
+          </div>
+          <img class="img-fluid" src="./photo/pencil cover badge.jpg" alt="..." />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="header">
+    <h2>The buttons below are impossible to resist...</h2>
+    <button class="btn">Click Me!</button>
+    <button class="btn">Look at Me!</button>
+  </div>
+
+  <!-- خريطة + تواصل -->
+  <div class="map-container" id="contact">
+    <iframe 
+      src="https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sTwitter,+Inc.,+Market+Street,+San+Francisco,+CA!5e0!6i15!3m1!1sen!5m1!1sen" 
+      class="map-image">
+    </iframe>
+  </div>
+
+  <footer>
+    <div class="footer-icon">
+      <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon github"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="p">
+      <p>Copyright 2025. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

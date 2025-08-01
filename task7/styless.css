@@ -1,0 +1,460 @@
+/* ===================== */
+/* ✅ 1. المتغيرات العامة */
+/* ===================== */
+:root {
+  --main-color: #2c6e8c;
+  --accent-color: #f4a261;
+}
+
+
+/* ==================== */
+/* ✅ 2. إعادة التهيئة */
+/* ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  color: #333;
+  overflow-x: hidden;
+}
+
+
+/* =============================== */
+/* ✅ 3. زر القائمة الجانبية Menu */
+/* =============================== */
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.7);
+  z-index: 1051;
+  border: none;
+  border-radius: 6px;
+  font-size: 28px;
+  transition: background 0.3s ease;
+}
+
+
+/* ======================= */
+/* ✅ 4. القائمة الجانبية */
+/* ======================= */
+.offcanvas.offcanvas-end {
+  width: 250px;
+  background-color: #1a7c9c;
+}
+
+.offcanvas-title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.offcanvas-header .btn-close {
+  display: none;
+}
+
+.offcanvas-body a {
+  display: block;
+  margin: 18px 0;
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+  color: #cceeff;
+}
+
+
+/* ======================= */
+/* ✅ 5. الصفحة الرئيسية */
+/* ======================= */
+.bg-cover {
+  background: url('./photo/Start padge.jpeg') center center / cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #000;
+}
+
+.bg-cover h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.bg-cover p {
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+.bg-cover .btn {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  padding: 12px 28px;
+}
+
+
+/* =================== */
+/* ✅ 6. الأقسام العامة */
+/* =================== */
+.section {
+  padding: 80px 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #555;
+}
+
+.section button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.section button:hover {
+  background-color: #555;
+}
+
+
+/* =================== */
+/* ✅ 7. قسم الخدمات */
+/* =================== */
+.services-section {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-section .services-title {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.services-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+
+/* ======================== */
+/* ✅ 8. أيقونات الخدمات */
+/* ======================== */
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  color: #1a7c9c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.icon img {
+  width: 50%;
+  height: 50%;
+}
+
+.text {
+  text-align: center;
+}
+
+.text strong {
+  font-size: 1.2em;
+}
+
+.text p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  
+}
+
+
+/* ============================== */
+/* ✅ 9. قسم منتصف الصفحة cont */
+/* ============================== */
+.cont {
+  text-align: center;
+  height: 100vh;
+  padding: 60px 20px;
+  background: url('./photo/middle photo.jpeg') center center / cover no-repeat;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #1976D2;
+}
+
+
+/* ====================== */
+/* ✅ 10. قسم المشاريع */
+/* ====================== */
+.portfolio {
+  padding: 100px 120px;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  clip-path: inset(-1px);
+  transition: clip-path 0.25s ease-out;
+}
+
+.portfolio-item:hover img {
+  clip-path: inset(2rem);
+}
+
+.portfolio-item .caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  background-color: rgba(33, 37, 41, 0.2);
+  z-index: 1;
+  transition: clip-path 0.25s ease-out, background-color 0.7s;
+  clip-path: inset(0);
+}
+
+.portfolio-item:hover .caption {
+  background-color: rgba(29, 128, 159, 0.9);
+  clip-path: inset(2rem);
+}
+
+.caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+  transition: opacity 0.25s;
+}
+
+.caption-content .h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.caption-content p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+/* ===================== */
+/* ✅ 11. Responsive Media */
+/* ===================== */
+@media screen and (max-width: 990px) {
+  .portfolio {
+    padding: 50px 20px;
+  }
+
+  .caption-content {
+    margin: auto 1rem 1rem;
+    text-align: center;
+  }
+
+  .portfolio-item:hover img,
+  .portfolio-item:hover .caption {
+    clip-path: inset(1rem);
+  }
+
+  .download-section {
+    height: 70vh;
+  }
+
+  .fw-2xl {
+    font-size: 2.5rem;
+  }
+
+  .fw-xl {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio {
+    padding: 30px 10px;
+  }
+
+  .portfolio-item {
+    margin-bottom: 1rem;
+  }
+
+  .caption-content {
+    margin: auto 0.5rem 0.5rem;
+  }
+
+  .caption-content .h2 {
+    font-size: 0.7rem;
+  }
+
+  .caption-content p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio-item:hover img,
+  .portfolio-item:hover .caption {
+    clip-path: inset(0.5rem);
+  }
+
+  .fw-2xl {
+    font-size: 2rem;
+  }
+
+  .fw-xl {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* =================== */
+/* ✅ 12. الهيدر */
+/* =================== */
+.header {
+  background-color: #1a7c9c;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.header h2 {
+  margin: 0 0 10px 0;
+}
+
+
+/* =================== */
+/* ✅ 13. الأزرار */
+/* =================== */
+.btn {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:first-child {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn:last-child {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* =================== */
+/* ✅ 14. الخريطة */
+/* =================== */
+.map-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ============================== */
+/* ✅ 15. الأيقونات في الفوتر */
+/* ============================== */
+.footer-icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+
+
+.footer-icon a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p {
+  text-align: center;
+  margin-top: 20px; /* اختياري: للمسافة العلوية */
+}
+
